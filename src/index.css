@@ -8,3 +8,9 @@
     background-size: cover;
     background-color: black;
 }
+.recovery-wrapper{
+    background-image: url(./assets/images/recovery-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
