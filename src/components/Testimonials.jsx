@@ -83,7 +83,7 @@ export default function Testimonials() {
                                 getStarSvg(i, +testimonial.rating)
                             ))}
                         </div>
-                        <p className="text-customBlack mb-6">{testimonial.content}</p>
+                        <p className="text-customBlack mb-6 select-none">{testimonial.content}</p>
                         <div className="flex items-center">
                             <div className="h-12 w-12 rounded-full overflow-hidden mr-4">
                                 <img

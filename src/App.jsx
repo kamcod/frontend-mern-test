@@ -2,6 +2,8 @@ import Button from "./components/UI/Button";
 import {ReactComponent as ArrowIcon} from "./assets/icons/up-arrow-icon.svg"
 import {ReactComponent as PlayButton} from "./assets/images/video-play-btn.svg"
 import Testimonials from "./components/Testimonials";
+import StepsCard from "./components/StepsCard";
+import greenCircleGif from "./assets/images/green-circle.gif";
 
 function App() {
   return (
@@ -112,8 +114,64 @@ function App() {
               </div>
 
               <div className="w-[80%]">
-                  <Testimonials />
+                  <Testimonials/>
               </div>
+          </div>
+
+          <div className="relative w-full mt-16">
+              <div className="absolute mt-[250px] w-full flex justify-center">
+                  <img src={greenCircleGif} alt="circle-green-gif"/>
+              </div>
+              <div className="absolute w-full flex justify-center steps-block-wrapper">
+                  <div className="w-[80%] py-16">
+                      <h3 className="text-themeColor text-2xl font-medium mb-2">GET SAME-DAY ONLINE</h3>
+                      <div className="flex justify-between items-center w-full">
+                          <h2 className="text-[52px] font-medium text-gray-800">Suboxone Treatment In 10 Minutes</h2>
+                          <Button onClick={() => {
+                          }} icon={<ArrowIcon/>}>
+                              Download the app today
+                          </Button>
+                      </div>
+
+                      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-[400px]">
+                          <div>
+                              <StepsCard
+                                  step="1"
+                                  title="Download The App"
+                                  content="Click the link to download our app to get started."
+                              />
+                              <StepsCard
+                                  className="mt-20"
+                                  step="1"
+                                  title="Schedule Your First Visit"
+                                  content="Our onboarding team will send you a link to book your first meeting. Many times, this is the same day."
+                              />
+                          </div>
+                          <div>
+                              <StepsCard
+                                  step="2"
+                                  title="Complete Onboarding Process & Documents"
+                                  content="Provide medical history and sign treatment forms."
+                              />
+                              <StepsCard
+                                  className="mt-20"
+                                  step="4"
+                                  title="Meet With Licensed Provider"
+                                  content="At the time of your appointment, open the app on your phone to have your visit."
+                              />
+                          </div>
+                      </div>
+
+                      <div className="flex justify-center items-center mt-20">
+                          <StepsCard
+                              step="6"
+                              title="Pick Up Medication"
+                              content="Your script will be sent to your pharmacy of choice for pick up the same day."
+                          />
+                      </div>
+                  </div>
+              </div>
+
           </div>
       </>
   );

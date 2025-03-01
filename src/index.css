@@ -14,3 +14,7 @@
     background-size: cover;
     background-color: black;
 }
+
+.steps-block-wrapper{
+    background: linear-gradient(223.74deg, rgba(73, 199, 171, 0.32) 11.54%, rgba(255, 255, 255, 0.32) 111.58%);
+}
