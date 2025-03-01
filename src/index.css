@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cover-image-wrapper{
+    background-image: url(./assets/images/cover-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
