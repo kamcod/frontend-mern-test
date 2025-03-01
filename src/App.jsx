@@ -1,5 +1,6 @@
 import Button from "./components/UI/Button";
 import {ReactComponent as ArrowIcon} from "./assets/icons/up-arrow-icon.svg"
+import {ReactComponent as PlayButton} from "./assets/images/video-play-btn.svg"
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
               </div>
 
           </div>
+
           <div className="h-[375px] relative recovery-wrapper">
               <div className="absolute h-[375px] inset-0 bg-white opacity-80"></div>
               <div className="flex justify-center items-center z-1 absolute w-full">
@@ -78,6 +80,32 @@ function App() {
                                   <div className="text-customBlack text-[24px]">Patients Satisfaction</div>
                               </div>
                           </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div className="w-full flex justify-center">
+              <div className="w-[80%] grid grid-cols-2 gap-20 py-16">
+                  <div className="flex flex-col gap-5">
+                      <div className="text-2xl text-themeColor">
+                          WELCOME TO RECOVERY DELIVERED
+                      </div>
+                      <div className="text-[52px] font-medium text-customBlack">
+                          Your Fully Online Suboxone Treatment Platform
+                      </div>
+                      <div className="text-xl text-customBlack">
+                          100% online opioid treatment with licensed buprenorphine providers starts at just $99/month.
+                      </div>
+                      <div className="text-xl text-customBlack">
+                          With monthly and weekly meetings based on where you are in your recovery. Get a same-day
+                          appointment and script.
+                      </div>
+                  </div>
+                  <div className="relative cover-image-wrapper h-[395px] rounded-[16px] overflow-hidden">
+                      <div className="absolute h-[395px] inset-0 bg-black opacity-50"></div>
+                      <div className="z-1 absolute w-full h-full flex justify-center items-center">
+                          <PlayButton/>
                       </div>
                   </div>
               </div>
