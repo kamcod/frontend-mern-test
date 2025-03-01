@@ -1,6 +1,7 @@
 import Button from "./components/UI/Button";
 import {ReactComponent as ArrowIcon} from "./assets/icons/up-arrow-icon.svg"
 import {ReactComponent as PlayButton} from "./assets/images/video-play-btn.svg"
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -85,7 +86,7 @@ function App() {
               </div>
           </div>
 
-          <div className="w-full flex justify-center">
+          <div className="w-full flex flex-col items-center">
               <div className="w-[80%] grid grid-cols-2 gap-20 py-16">
                   <div className="flex flex-col gap-5">
                       <div className="text-2xl text-themeColor">
@@ -108,6 +109,10 @@ function App() {
                           <PlayButton/>
                       </div>
                   </div>
+              </div>
+
+              <div className="w-[80%]">
+                  <Testimonials />
               </div>
           </div>
       </>
