@@ -38,7 +38,7 @@ function Home() {
                             <div
                                 className="w-full py-[32px] px-[48px] flex justify-between items-center bg-[#0000001A] backdrop-blur-sm rounded-[16px]"
                             >
-                                <div className="text-[61.28px] font-cabinet font-semibold text-white">LOGO</div>
+                                <div className="text-[61.28px] font-semibold text-white">LOGO</div>
                                 <div className="flex items-center gap-10 text-white text-lg">
                                     {navigationLinks.map((link) => <a href={link.url}>{link.label}</a>)}
                                 </div>

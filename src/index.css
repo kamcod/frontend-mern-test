@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
+@import url('https://fonts.cdnfonts.com/css/frank-ruhl-libre');
+
+body{
+    font-family: 'Cabinet Grotesk', 'sans-serif';
+}
+
 .cover-image-wrapper{
     background-image: url(./assets/images/cover-img.png);
     background-repeat: no-repeat;

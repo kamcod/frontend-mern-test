@@ -15,7 +15,7 @@ export default function Button({
             // eslint-disable-next-line react/button-has-type
             type={buttonProps.type || 'button'}
             className={clsx(
-                'py-4 px-6 rounded-[8px] w-fit text-lg',
+                'py-4 px-6 rounded-[8px] w-fit text-lg font-frank',
                 {
                     'opacity-50 cursor-not-allowed': buttonProps.disabled,
                     'bg-themeColor text-white': variant === 'primary',
