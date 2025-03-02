@@ -18,8 +18,8 @@ export default function Button({
                 'py-4 px-6 rounded-[8px] w-fit text-lg font-frank',
                 {
                     'opacity-50 cursor-not-allowed': buttonProps.disabled,
-                    'bg-themeColor text-white': variant === 'primary',
-                    'bg-black text-white': variant === 'black'
+                    'bg-themeColor hover:bg-hoverThemeColor text-white': variant === 'primary',
+                    'bg-black hover:bg-[#101010] text-white': variant === 'black'
                 },
                 className
             )}

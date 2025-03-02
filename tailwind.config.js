@@ -8,6 +8,7 @@ module.exports = {
         extend: {
             colors: {
                 themeColor: '#49C7AB',
+                hoverThemeColor: '#5de1c4',
                 customBlack: '#475569',
                 offWhite: '#F1F5F9'
             },
