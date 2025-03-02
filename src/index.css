@@ -46,3 +46,14 @@
     fill: #fa846d;
 }
 
+
+.get-app-block-wrapper{
+    background-image: url(./assets/images/get-app-gif.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.get-app-block {
+    background: linear-gradient(123.74deg, rgba(73, 199, 171, 0.7) 11.54%, rgba(255, 255, 255, 0.7) 111.58%);
+}
+
