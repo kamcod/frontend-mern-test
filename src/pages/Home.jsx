@@ -137,6 +137,7 @@ function Home() {
                     </div>
                 </div>
 
+                {/* Testimonials */}
                 <div className="w-[90%] sm:w-[80%]">
                     <Testimonials />
                 </div>
