@@ -5,62 +5,9 @@
 @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 @import url('https://fonts.cdnfonts.com/css/frank-ruhl-libre');
 
+@import "styles/homepage.css";
+
 body{
     font-family: 'Cabinet Grotesk', 'sans-serif';
-}
-
-.cover-image-wrapper{
-    background-image: url(./assets/images/cover-img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-.recovery-wrapper{
-    background-image: url(./assets/images/recovery-gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-
-.steps-block-wrapper{
-    background: linear-gradient(223.74deg, rgba(73, 199, 171, 0.32) 11.54%, rgba(255, 255, 255, 0.32) 111.58%);
-}
-
-.features-svg-wrapper {
-    width: 100%;
-    max-width: 646px;
-    height: 100px; /* Set a height for visibility */
-    overflow: hidden;
-    position: relative;
-}
-
-.features-svg {
-    position: absolute;
-    right: -100px; /* Start outside the right side */
-    animation: slideLeft 6s linear infinite;
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%); /* Move left by half the width */
-    }
-}
-
-.map-hover:hover {
-    fill: #fa846d;
-}
-
-
-.get-app-block-wrapper{
-    background-image: url(./assets/images/get-app-gif.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
-}
-.get-app-block {
-    background: linear-gradient(123.74deg, rgba(73, 199, 171, 0.7) 11.54%, rgba(255, 255, 255, 0.7) 111.58%);
 }
 
