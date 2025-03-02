@@ -29,17 +29,17 @@ const otherLinks = [
 function Home() {
     return (
         <>
-            <div className="h-[1080px] cover-image-wrapper">
-                <div className="absolute h-[1080px] inset-0 bg-black opacity-50" />
+            <div className="h-[1300px] sm:h-[1150px] md:h-[1080px] cover-image-wrapper">
+                <div className="absolute h-[1300px] sm:h-[1150px] md:h-[1080px] inset-0 bg-black opacity-50" />
                 <div className="z-1 absolute w-full">
 
                     <div className="flex flex-col justify-center items-center mt-10">
-                        <div className="w-[80%]">
+                        <div className="w-[90%] sm:w-[80%]">
                             <div
-                                className="w-full py-[32px] px-[48px] flex justify-between items-center bg-[#0000001A] backdrop-blur-sm rounded-[16px]"
+                                className="w-full py-[32px] px-[48px] flex flex-col md:flex-row justify-between items-center bg-[#0000001A] backdrop-blur-sm rounded-[16px]"
                             >
                                 <div className="text-[61.28px] font-semibold text-white">LOGO</div>
-                                <div className="flex items-center gap-10 text-white text-lg">
+                                <div className="flex items-center gap-5 sm:gap-10 text-white text-lg">
                                     {navigationLinks.map((link) => <a href={link.url}>{link.label}</a>)}
                                 </div>
                                 <Button onClick={() => {}}>
@@ -67,10 +67,10 @@ function Home() {
 
             </div>
 
-            <div className="h-[375px] relative recovery-wrapper">
-                <div className="absolute h-[375px] inset-0 bg-white opacity-80" />
+            <div className="h-[900px] sm:h-[600px] md:h-[375px] relative recovery-wrapper">
+                <div className="absolute h-[900px] sm:h-[600px] md:h-[375px] inset-0 bg-white opacity-80" />
                 <div className="flex justify-center items-center z-1 absolute w-full">
-                    <div className="w-[80%] grid grid-cols-2 gap-20 py-16">
+                    <div className="w-[90%] sm:w-[80%] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20 py-16">
                         <div>
                             <div className="text-[46px] font-medium text-customBlack">
                                 Breaking Barriers to Recovery
@@ -93,7 +93,7 @@ function Home() {
                                 inconvenience,
                                 or lack of access to quality care
                             </div>
-                            <div className="mt-10 mx-5 grid grid-cols-3">
+                            <div className="mt-10 md:mx-5 grid grid-cols-3 gap-3 md:gap-5 w-full">
                                 <div>
                                     <div className="text-themeColor text-[40px] font-medium">500+</div>
                                     <div className="text-customBlack text-[24px]">Patients Treated</div>
@@ -113,7 +113,7 @@ function Home() {
             </div>
 
             <div className="w-full flex flex-col items-center">
-                <div className="w-[80%] grid grid-cols-2 gap-20 py-16">
+                <div className="w-[90%] sm:w-[80%] grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20 py-16">
                     <div className="flex flex-col gap-5">
                         <div className="text-2xl text-themeColor">
                             WELCOME TO RECOVERY DELIVERED
@@ -137,19 +137,19 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="w-[80%]">
+                <div className="w-[90%] sm:w-[80%]">
                     <Testimonials />
                 </div>
             </div>
 
             <div className="relative w-full mt-16">
-                <div className="absolute mt-[250px] w-full flex justify-center">
+                <div className="absolute top-[900px] sm:top-[730px] md:top-[250px] w-full flex justify-center">
                     <img src={greenCircleGif} alt="circle-green-gif" />
                 </div>
                 <div className="z-1 relative w-full flex justify-center steps-block-wrapper">
-                    <div className="w-[80%] py-16">
+                    <div className="w-[90%] sm:w-[80%] py-16">
                         <h3 className="text-themeColor text-2xl font-medium mb-2">GET SAME-DAY ONLINE</h3>
-                        <div className="flex justify-between items-center w-full">
+                        <div className="flex flex-col sm:flex-row justify-between items-center w-full">
                             <h2 className="text-[52px] font-medium text-gray-800">Suboxone Treatment In 10 Minutes</h2>
                             <Button
                                 onClick={() => {
@@ -160,7 +160,7 @@ function Home() {
                             </Button>
                         </div>
 
-                        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-[400px]">
+                        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-[300px] md:gap-[200] lg:gap-[400px]">
                             <div>
                                 <StepsCard
                                     step="1"
@@ -201,7 +201,7 @@ function Home() {
 
             </div>
             <div className="mt-16 w-full flex flex-col items-center">
-                <div className="w-[80%]">
+                <div className="w-[90%] sm:w-[80%]">
                     <h3 className="text-themeColor text-2xl font-medium mb-2">AS SEEN</h3>
                     <div className="flex justify-between items-center w-full">
                         <h2 className="text-[52px] font-medium text-gray-800">Featured On</h2>
@@ -220,7 +220,7 @@ function Home() {
                         </p>
                     </div>
 
-                    <div className="mt-5 grid grid-cols-[40%_60%] gap-10">
+                    <div className="mt-5 grid grid-cols-1 md:grid-cols-[40%_60%] gap-10">
                         <div className="flex flex-col gap-3 mt-4">
                             <Toronto />
                             <div className="text-[31.56px] font-semibold">
@@ -262,7 +262,7 @@ function Home() {
             </div>
 
             <div className="mt-16 w-full flex flex-col items-center">
-                <div className="w-[80%]">
+                <div className="w-[90%] sm:w-[80%]">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div>
                             <div className="text-themeColor text-[76.52px] font-medium">LOGO</div>
